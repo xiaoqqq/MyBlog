@@ -23,7 +23,7 @@ public class RegisterController extends Controller {
 		JSONArray data = new JSONArray();// 承载用户信息的array
 		if (registerUserInfo == null) {// 注册失败
 			object.put("errorCode", 0);
-			object.put("msg", "用户名已存在");
+			object.put("msg", "注册失败,用户名已存在");
 			object.put("data", data);
 			this.renderJson(object);
 		} else { // 成功

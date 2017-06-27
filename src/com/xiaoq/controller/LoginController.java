@@ -38,6 +38,7 @@ public class LoginController extends Controller {
 			object.put("errorCode", 1);
 			object.put("msg", "登录成功");
 			// 用户信息
+			infos.put("id", userModule.getInt("id"));
 			infos.put("username", userModule.get("username"));
 			infos.put("nickname", userModule.get("nickname"));
 			infos.put("sex", userModule.getInt("sex"));
