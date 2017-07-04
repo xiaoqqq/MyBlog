@@ -46,6 +46,7 @@ public class LoginController extends Controller {
 			infos.put("nickname", userModule.get("nickname"));
 			infos.put("mobile", userModule.get("mobile"));
 			infos.put("score", userModule.getInt("score"));
+			infos.put("email", userModule.get("email"));
 			infos.put("token", LoginService.insertTOKEN(user));
 			// 添加值data数组中
 			data.add(infos);
